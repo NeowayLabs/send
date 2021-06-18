@@ -132,12 +132,12 @@ const conf = convict({
   },
   max_file_size: {
     format: Number,
-    default: 1024 * 1024 * 1024 * 2.5,
+    default: 1677721600,
     env: 'MAX_FILE_SIZE'
   },
   anon_max_file_size: {
     format: Number,
-    default: 1024 * 1024 * 1024,
+    default: 1677721600,
     env: 'ANON_MAX_FILE_SIZE'
   },
   l10n_dev: {
@@ -147,7 +147,7 @@ const conf = convict({
   },
   base_url: {
     format: 'url',
-    default: 'https://send.firefox.com',
+    default: 'https://dropnw.neoway.com.br/',
     env: 'BASE_URL'
   },
   file_dir: {

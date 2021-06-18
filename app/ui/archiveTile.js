@@ -25,29 +25,28 @@ function expiryInfo(translate, archive) {
   );
 }
 
+function randomPassword() {
+    var length = 16
+    var chars = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()-+<>ABCDEFGHIJKLMNOP1234567890";
+    var pass = "";
+    for (var x = 0; x < length; x++) {
+        var i = Math.floor(Math.random() * chars.length);
+        pass += chars.charAt(i);
+    }
+    return pass;
+}
 function password(state) {
+  var  pass = randomPassword();
   const MAX_LENGTH = 32;
+  const MIN_LENGTH = 8;
+  state.archive.password = pass;
 
   return html`
     <div class="mb-2 px-1">
-      <input
-        id="autocomplete-decoy"
-        class="hidden"
-        type="password"
-        value="lol"
-      />
-      <div class="checkbox inline-block mr-3">
-        <input
-          id="add-password"
-          type="checkbox"
-          ${state.archive.password ? 'checked' : ''}
-          autocomplete="off"
-          onchange="${togglePasswordInput}"
-        />
-        <label for="add-password">
-          ${state.translate('addPassword')}
+        <label>
+          Salve a senha:
         </label>
-      </div>
+
       <input
         id="password-input"
         class="${state.archive.password
@@ -55,11 +54,16 @@ function password(state) {
           : 'invisible'} border rounded focus:border-blue-60 leading-normal my-1 py-1 px-2 h-8 dark:bg-grey-80"
         autocomplete="off"
         maxlength="${MAX_LENGTH}"
-        type="password"
+	minlength="${MIN_LENGTH}"
+        required = "required"
+        readonly="readonly"
+        type="text"
         oninput="${inputChanged}"
         onfocus="${focused}"
         placeholder="${state.translate('unlockInputPlaceholder')}"
-        value="${state.archive.password || ''}"
+        value="${pass}"
+
+
       />
       <label
         id="password-msg"
@@ -273,7 +277,7 @@ module.exports = function(state, emit, archive) {
       try {
         await navigator.share({
           title: state.translate('-send-brand'),
-          text: `Download "${archive.name}" with Firefox Send: simple, safe file sharing`,
+          text: `Download "${archive.name}" with Neoway Drop: simple, safe file sharing`,
           //state.translate('shareMessage', { name }),
           url: archive.url
         });

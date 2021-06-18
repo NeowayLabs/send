@@ -1,5 +1,5 @@
-# Send is a brand name and should not be localized.
-title = Send
+# Neoway Drop is a brand name and should not be localized.
+title = Neoway Drop
 importingFile = Importando…
 encryptingFile = Criptografando…
 decryptingFile = Descriptografando…
@@ -19,13 +19,13 @@ unlockButtonLabel = Desbloquear
 downloadButtonLabel = Baixar
 downloadFinish = Download concluído
 fileSizeProgress = ({ $partialSize } de { $totalSize })
-sendYourFilesLink = Experimente o Send
+sendYourFilesLink = Experimente o Neoway Drop
 errorPageHeader = Oops, ocorreu um erro!
 fileTooBig = Esse arquivo ou grupo de arquivos é grande demais para ser enviado. Deve ser menor que { $size }.
 linkExpiredAlt = Link expirado
 notSupportedHeader = Seu navegador não é suportado.
 notSupportedLink = Por que meu navegador não é suportado?
-notSupportedOutdatedDetail = Infelizmente essa versão do Firefox não suporta a tecnologia web que faz o Send funcionar. Você precisa atualizar o seu navegador.
+notSupportedOutdatedDetail = Infelizmente essa versão do Firefox não suporta a tecnologia web que faz o Neoway Drop funcionar. Você precisa atualizar o seu navegador.
 updateFirefox = Atualizar o Firefox
 deletePopupCancel = Cancelar
 deleteButtonHover = Remover da lista
@@ -33,8 +33,8 @@ footerLinkLegal = Jurídico
 footerLinkPrivacy = Privacidade
 footerLinkCookies = Cookies
 passwordTryAgain = Senha incorreta. Tente novamente.
-javascriptRequired = O Send requer JavaScript
-whyJavascript = Por que o Send precisa do JavaScript?
+javascriptRequired = O Neoway Drop requer JavaScript
+whyJavascript = Por que o Neoway Drop precisa do JavaScript?
 enableJavascript = Ative o JavaScript e tente novamente.
 # A short representation of a countdown timer containing the number of hours and minutes remaining as digits, example "13h 47m"
 expiresHoursMinutes = { $hours }h { $minutes }min
@@ -48,11 +48,11 @@ passwordSetError = Essa senha não pôde ser definida
 ## Send version 2 strings
 
 # Send, Send, Firefox, Mozilla are proper names and should not be localized
--send-brand = Send
--send-short-brand = Send
+-send-brand = Neoway Drop
+-send-short-brand = Drop
 -firefox = Firefox
 -mozilla = Mozilla
-introTitle = Compartilhamento de arquivos fácil e privativo
+introTitle = Compartilhamento de arquivos da Neoway
 introDescription = O { -send-brand } permite compartilhar arquivos com criptografia de ponta a ponta através de um link que expira automaticamente. Assim você pode proteger o que compartilha e ter certeza que suas coisas não ficarão online para sempre.
 notifyUploadEncryptDone = Seu arquivo foi criptografado e está pronto para ser enviado
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'

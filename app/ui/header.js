@@ -21,9 +21,9 @@ class Header extends Component {
       platform() === 'android'
         ? html`
             <a class="flex flex-row items-center">
-              <img src="${assets.get('icon.svg')}" />
+              <img src="${assets.get('Neoway-vetores.svg')}" />
               <svg class="w-48">
-                <use xlink:href="${assets.get('wordmark.svg')}#logo" />
+                <use xlink:href="${assets.get('Neoway-vetores.svg')}#logo" />
               </svg>
             </a>
           `
@@ -31,10 +31,10 @@ class Header extends Component {
             <a class="flex flex-row items-center" href="/">
               <img
                 alt="${this.state.translate('title')}"
-                src="${assets.get('icon.svg')}"
+                src="${assets.get('Neoway-vetores.svg')}"
               />
               <svg viewBox="66 0 340 64" class="w-48 md:w-64">
-                <use xlink:href="${assets.get('wordmark.svg')}#logo" />
+                <use xlink:href="${assets.get('Neoway-vetores.svg')}#logo" />
               </svg>
             </a>
           `;

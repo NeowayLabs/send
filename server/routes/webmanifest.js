@@ -2,8 +2,8 @@ const assets = require('../../common/assets');
 
 module.exports = function(req, res) {
   const manifest = {
-    name: 'Firefox Send',
-    short_name: 'Send',
+    name: 'Neoway Drop',
+    short_name: 'Drop',
     lang: req.language,
     icons: [
       {
